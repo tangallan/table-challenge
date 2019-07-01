@@ -1,38 +1,15 @@
 import React from 'react';
 import './App.css';
-import {HTMLTable} from '@blueprintjs/core'
+// import { HTMLTable } from '@blueprintjs/core';
+
+import PeopleDataTable from './containers/PeopleDataTable/PeopleDataTable';
 
 function App() {
-  return (
-    <div className="App">
-      <HTMLTable striped={true} bordered={true}>
-        <thead>
-          <tr>
-            <th>Firstname</th>
-            <th>Lastname</th> 
-            <th>Age</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Evan</td>
-            <td>Feenstra</td> 
-            <td>30</td>
-          </tr>
-          <tr>
-            <td>Joe</td>
-            <td>Shmoe</td> 
-            <td>31</td>
-          </tr>
-          <tr>
-            <td>Josh</td>
-            <td>Aharonoff</td> 
-            <td>30</td>
-          </tr>
-        </tbody>
-      </HTMLTable>
-    </div>
-  );
+    return (
+        <div className='App'>
+            <PeopleDataTable />
+        </div>
+    );
 }
 
 export default App;
